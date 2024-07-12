@@ -178,10 +178,10 @@ template<typename T> std::string FloatToString(T t, int precision) {
 }
 
 template<> inline std::string NumToString<double>(double t) {
-  return FloatToString(t, 12);
+  return FloatToString(t, 20);
 }
 template<> inline std::string NumToString<float>(float t) {
-  return FloatToString(t, 6);
+  return FloatToString(t, 20);
 }
 
 // Convert an integer value to a hexadecimal string.
